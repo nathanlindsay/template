@@ -6,7 +6,7 @@
 		"dev": "vite dev",
 		"codegen": "npm run codegen:migrations && npm run codegen:types",
 		"codegen:migrations": "supabase db diff -f $RANDOM",
-		"codegen:types": "supabase gen types typescript --local --schema public > types.ts",
+		"codegen:types": "supabase gen types typescript --local --schema public > ./src/lib/supabase/types.ts",
 		"build": "vite build",
 		"preview": "vite preview",
 		"format": "prettier --write .",
