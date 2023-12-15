@@ -4,8 +4,8 @@ declare global {
 	namespace App {
 		// interface Error {}
 		interface Locals {
-			supabase: import('@supabase/supabase-js').SupabaseClient<
-				import('$lib/supabase/types').Database
+			supabase: import("@supabase/supabase-js").SupabaseClient<
+				import("$lib/supabase/types").Database
 			>;
 		}
 		// interface PageData {}
